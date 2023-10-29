@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code-editor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   
     <style>
 iframe{
 
     height:20cm;
-    width: 22cm;
+    width: 20cm;
     margin-top: 3cm;
    
    
@@ -20,29 +23,97 @@ iframe{
 
 body{
     background: fixed;
-    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(0, 74, 158));
+    background-image: linear-gradient(to right, rgb(86, 86, 86) , rgb(0, 0, 0));
 }
-h1{
-
-    text-align: center;
-    margin-top: 1cm;
-    font-size:1.5cm;
 
 
 
-        background-image: -webkit-linear-gradient(125deg, #f2291b, #f7db25, #84f527);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 1s infinite linear;
-        }@-webkit-keyframes hue {
-         from {
-           -webkit-filter: hue-rotate(0deg);
-         }
-         to {
-           -webkit-filter: hue-rotate(-360deg);
-         }
-        }
+    h1 , p{
+      color: #fff;
+      font-size: 30px;
+    }
+    
+    h1{
+      font-size: 60px;
+    }
+    
+    span{
+      background-color: orange;
+      color: #000;
+      padding: 6px;
+      border-radius: 5px;
+      
+    }
+    
+    p{
+      letter-spacing: 15px;
+    }
 
+
+
+
+
+
+
+    .footer-basic {
+      padding:40px 0;
+      background-image: linear-gradient(to right,rgb(66, 66, 66),rgb(175, 107, 29), rgb(255, 174, 0));
+      color:#000000;
+    }
+    
+    .footer-basic ul {
+      padding:0;
+      list-style:none;
+      text-align:center;
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:0;
+    }
+    
+    .footer-basic li {
+      padding:0 10px;
+    }
+    
+    .footer-basic ul a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+      opacity:1;
+    }
+    
+    .footer-basic .social {
+      text-align:center;
+      padding-bottom:25px;
+    }
+    
+    .footer-basic .social > a {
+      font-size:40px;
+      width:40px;
+      height:40px;
+      line-height:40px;
+      display:inline-block;
+      text-align:center;
+      
+      margin:0 8px;
+      color:inherit;
+      opacity:0.75;
+    }
+    
+    .footer-basic .social > a:hover {
+      opacity:0.9;
+    }
+    
+    .footer-basic .copyright {
+      margin-top:15px;
+      text-align:center;
+      font-size:13px;
+      color:#ffffff;
+      margin-bottom:0;
+     
+    }
 
        
         
@@ -51,70 +122,59 @@ h1{
 <body>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
-        <div class="container-fluid" >
-          <a class="navbar-brand" style="color: aqua; font-weight: bold;">ONLINE IDE By REHYAN YADAV
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://alphacodes.epizy.com/index.html?i=1">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://alphacodes.epizy.com/courses.html">Courses</a>
-                
-              </li>
-           
-           
-          </div>
-        </div>
-      </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand"style ="color:orange;font-style:bold;">ONLINE IDE By REHYAN YADAV</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://alphacodes.epizy.com/index.html?i=1"style="color:orange">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://alphacodes.epizy.com/courses.html"style="color:orange">Courses </a>
+      </li>
+  
+  </div>
+</nav>
+
 <!-- CODE OF NAV BAR END HERE -->
 
-      <h1><strong>
-        CODE HERE!!<br>
-        Alphacodes101
-      </strong>
-  
-      </h1>
+
+
+
+
+
+<center>
+  <h1>code <span>Hub</span></h1>
+  <p>community</p>
+ </center>
 
     <iframe src ="https://www.online-ide.com " scrolling="no" and style="overflow:hidden"  >
 
 
 
     </iframe>
-<h1>
 
-</h1>
+    <br>
 
 
-    <footer class="futuristic-footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="new_logo02.png" alt="Your Logo">
-        </div>
-        <div class="footer-links">
-          <ul>
-            <li><a href="http://alphacodes.epizy.com/index.html?i=1">Home</a></li>
-            <li><a href="https://aboutus101.nicepage.io/?version=cbd2d059-7f4e-41d1-a0a5-d8de28d93960">About Us</a></li>
-            <li><a href="http://alphacodes.epizy.com/contact.html">Contact</a></li>
+    <div class="footer-basic">
+      <footer>
+          <div class="social"><a href="#"><i class="icon ion-social-instagram" style ="color:orange"></i></a><a href="#"><i class="icon ion-social-youtube" style="color:red"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="http://alphacodes.epizy.com/index.html?i=1">Home</a></li>
+              <li class="list-inline-item"><a href="https://aboutus101.nicepage.io/?version=cbd2d059-7f4e-41d1-a0a5-d8de28d93960">About</a></li>
+              <li class="list-inline-item"><a href="http://alphacodes.epizy.com/contact.html">Contact</a></li>
           </ul>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-info">
-        <p>&copy; 2023 All rights reserved by rehyan </p>
-      </div>
-    </footer>
+          <p class="copyright">2023 All rights reserved by rehyan</p>
+      </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
